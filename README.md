@@ -65,7 +65,7 @@ range: bytes = 5001-1000
 5xx服务器处理请求出错
 
 
-## HTTP写作的网络
+## HTTP协作的网络
 
 - 通信数据转发程序：代理、网关、隧道
 -- 代理服务器
@@ -108,3 +108,9 @@ URI，会直接发送给前方持有资源的目标服务器
 - Http报文首部
 在请求中，HTTP 报文由方法、URI、HTTP 版本、HTTP 首部字段等部分构成。
 在响应中，HTTP 报文由 HTTP 版本、状态码（数字和原因短语）、HTTP 首部字段 3 部分构成。
+- HTTP/1.1通用首部字段
+请求报文和响应报文双方都会使用的首部。
+accept首部字段通知服务器用户代理能够处理的媒体类型及媒体类型的相对优先等级（用q表示权重值，用；分隔）
+authorization
+eg.Authorization: Basic dWVub3NlbjpwYXNzd29yZA==
+首部字段 Authorization 是用来告知服务器，用户代理的认证信息（证书值）

@@ -1,7 +1,7 @@
 # let命令与const
 <p>
 在let命令所在的代码块内有效</br>
- <code>
+```
 var a = [];
 for (var i = 0; i < 10; i++) {
   a[i] = function () {
@@ -17,7 +17,7 @@ for (let i = 0; i < 10; i++) {
   };
 }
 a[6](); // 6
-</code>
+```
 const常量
 </p>
 

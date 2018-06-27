@@ -94,12 +94,12 @@ alert(foo(3));// 30
 ```
 ## 带参数的匿名函数 与 箭头函数 
 ```
-//这是一个带参数的匿名函数
+//一个带参数的匿名函数
 var foo = (function(n) {
     return n*10;
 });
 
-//这是对应的箭头函数
+//对应的箭头函数
 var foo = (n) => n*10;
 //顺便说一句：向上面没有参数的情况，括号是一定要的。但是如果只有一个参数可以省掉,像这样：
 var foo = n => n*10;
@@ -111,13 +111,13 @@ alert(foo(3));// 30
 ```
 ## 多行语句
 ```
-//匿名函数这样
+//匿名函数
 var name = function name(str) {
    str = "---------" + str + "-----------";
    return str;
 };
 
-//这是对应的箭头函数（这就长的差不多了）
+//对应的箭头函数
 var name = str => {
    str = "---------" + str +"-----------";
    return str; 
@@ -125,17 +125,17 @@ var name = str => {
 ```
 ## 返回一个对象
 ```
-//匿名函数这样
+//匿名函数
 var boy = function boy(str) {
   return { name: str };
 };
 
-//这是对应的箭头函数
+//对应的箭头函数
 var boy = str => ({name:str}); 
 
 //测试
 var boy = str => ({name:str}); 
-var me = boy("笨笨");
+var me = boy("recube");
 alert(me.name);
 ```
 
